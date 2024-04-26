@@ -19,6 +19,7 @@ for (let i = 0; i < btns.length; i++) {
         img.classList.add("rotated");
       } else {
         img.classList.remove("rotated");
+        img.classList.add("unrotated")
       }
     });
   });
