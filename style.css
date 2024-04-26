@@ -1,0 +1,91 @@
+:root {
+  --violet: #433d61;
+  --purple: #553d61;
+  --green: #bfcc81;
+}
+
+body,
+html {
+  background-color: var(--violet);
+}
+
+#section1 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 100px;
+}
+
+#section2 {
+  min-width: 70vw;
+  border-top: solid 1px white;
+  border-bottom: solid 1px white;
+}
+
+#header {
+  font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+    "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  color: #bfcc81;
+  text-decoration: underline;
+  text-decoration-color: #553d61;
+  text-align: center;
+}
+
+.question {
+  font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+    "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
+  font-weight: normal;
+  color: #bfcc81;
+  font-size: 20px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.response {
+  display: flex;
+  flex-direction: column;
+  color: white;
+  font-family: Bahnschrift, "DIN Alternate", "Franklin Gothic Medium",
+    "Nimbus Sans Narrow", sans-serif-condensed, sans-serif;
+  font-weight: normal;
+  max-width: 80vw;
+  margin-left: 20px;
+  margin-right: 20px;
+  overflow: hidden;
+  max-height: 0;
+  transition: max-height 0.5s ease-in-out;
+}
+
+.response.show {
+  max-height: 1000px;
+  position: relative;
+}
+
+a.btn {
+  text-decoration: none;
+  color: #bfcc81;
+  display: inline-block;
+  padding: 10px 20px;
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s;
+  display: flex;
+  flex-direction: column-reverse;
+  align-content: space-between;
+}
+
+a.btn:hover {
+  background-color: #553d61;
+}
+
+img{
+  transition: trasform 0.5s ease-in-out;
+}
+
+.trs {
+  transform: rotate(300deg);
+}
